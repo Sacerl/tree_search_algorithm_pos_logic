@@ -33,7 +33,6 @@ def bfs(root):
 def dfs(node, result=[], tiefe=0):
     if node is None:
         return result
-<<<<<<< HEAD
  
     einrueckung = "  " * tiefe
     print(f"{einrueckung}-> Besuche: {node.value} (Tiefe {tiefe})")
@@ -45,19 +44,6 @@ def dfs(node, result=[], tiefe=0):
  
     print(f"{einrueckung}<- Zurueck bei: {node.value}")
  
-=======
-
- einrueckung = "  " * tiefe
-    print(f"{einrueckung}-> Besuche: {node.value} (Tiefe {tiefe})")
-    
-    result.append(node.value)
- 
-    for child in node.children:
-        dfs(child, result, tiefe+1)
-
-print(f"{einrueckung}-> Besuche: {node.value} (Tiefe {tiefe})")
-    
->>>>>>> f08ee15bc3f69df1ddc444ac5cc5d411f09ab03c
     return result
 
 
