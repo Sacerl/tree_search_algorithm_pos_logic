@@ -11,7 +11,7 @@ class Node:
 
 
 # ─────────────────────────────────────────
-#  BFS – Breitensuche (ohne target)
+#  BFS – Breitensuche
 # ─────────────────────────────────────────
 def bfs(root):
     """Besucht alle Knoten ebenenweise und gibt sie als Liste zurück."""
@@ -32,7 +32,7 @@ def bfs(root):
 
 
 # ─────────────────────────────────────────
-#  DFS – Tiefensuche (ohne target)
+#  DFS – Tiefensuche
 # ─────────────────────────────────────────
 def dfs(root):
     """Besucht alle Knoten in die Tiefe und gibt sie als Liste zurück."""
