@@ -30,22 +30,16 @@ def bfs(root):
 
 
 
-def dfs(root):
-    if root is None:
-        return []
-
-    result = []
-    stack = [root]
-
-    while stack:
-        node = stack.pop()
-        result.append(node.value)
-
-        for child in reversed(node.children):
-            stack.append(child)
-
+def dfs(node, result=[]):
+    if node is None:
+        return result
+ 
+    result.append(node.value)
+ 
+    for child in node.children:
+        dfs(child, result)
+ 
     return result
-
 
 
 
