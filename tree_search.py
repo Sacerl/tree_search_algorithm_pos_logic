@@ -10,11 +10,8 @@ class Node:
         self.children.append(child)
 
 
-# ─────────────────────────────────────────
-#  BFS – Breitensuche
-# ─────────────────────────────────────────
+
 def bfs(root):
-    """Besucht alle Knoten ebenenweise und gibt sie als Liste zurück."""
     if root is None:
         return []
 
@@ -31,11 +28,9 @@ def bfs(root):
     return result
 
 
-# ─────────────────────────────────────────
-#  DFS – Tiefensuche
-# ─────────────────────────────────────────
+
+
 def dfs(root):
-    """Besucht alle Knoten in die Tiefe und gibt sie als Liste zurück."""
     if root is None:
         return []
 
@@ -52,16 +47,8 @@ def dfs(root):
     return result
 
 
-# ─────────────────────────────────────────
-#  Beispielbaum aufbauen
-# ─────────────────────────────────────────
-#
-#          A
-#        / | \
-#       B  C  D
-#      / \    |
-#     E   F   G
-#
+
+
 def build_example_tree():
     root = Node("A")
     b, c, d = Node("B"), Node("C"), Node("D")
@@ -77,9 +64,8 @@ def build_example_tree():
     return root
 
 
-# ─────────────────────────────────────────
-#  Demo
-# ─────────────────────────────────────────
+
+
 if __name__ == "__main__":
     tree = build_example_tree()
 
